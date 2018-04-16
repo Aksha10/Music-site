@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+			<title>My Picture Grid</title>
+			
+			<link rel="stylesheet" href="/project/Music-site/stylesheet/stylepicture.css">
+    <body>
+
+		<!-- Main container -->
+		<div class="mainContainer">
+
+		  <!-- Container 2 -->
+			<div class="container1">
+				
+				<!-- Header Start -->
+				<header class="row">
+						<div class="column c1">
+							<div class="mike">
+							</div>
+						</div>
+						<div class="column c2">
+							<div class="music-logo">
+							</div>
+						</div>
+						<div class="column c3">
+							<div class="search-icon">
+								<input type="text" name="search" placeholder="Search..." class="search">
+							</div>
+						</div>
+					</header>
+					<!-- Header End -->
+
+					<!-- Navigation Bar1-->
+					<div class="navbar1">
+							<ul class="ulist1 row">
+								<li class="list1">
+									<a  href="http://localhost/project/Music-site/indexaboutme.html#">About me</a>
+								</li>
+								<li class="list1">
+									<a class="active" href="http://localhost/project/Music-site/indexpicture.html">My pictures</a>
+								</li>
+								<li class="list1">
+									<a href="#">My music</a>
+								</li>
+								<li class="list1">
+									<a href="#">My files</a>
+								</li>
+								<li class="list1">
+									<a href="#">My videos</a>
+								</li>
+							</ul>
+						</div>
+
+					<!-- Navigation Bar2-->
+					<div class="navbar2">
+						<ul class="ulist2 row">
+							<li class="list2">
+								<a class="active" href="http://localhost/project/Music-site/indexpicture.html#">Grid</a>
+							</li>
+							<li class="list2">
+								<a href="#">Gallery</a>
+							</li>
+						</ul>
+					</div>
+					<!-- Navigation Bar end-->
+
+					<!-- Main-Content -->
+					<div class="picLine">
+						<img class="image" src="/project/Music-site/images/download.jpeg" alt="image1" onclick="myFunction(this)">
+						<img class="image" src="/project/Music-site/images/images.jpeg" alt="image2" onclick="myFunction(this)">
+						<img class="image" src="/project/Music-site/images/images (1).jpeg" alt="image3" onclick="myFunction(this)">
+						<img class="image" src="/project/Music-site/images/images (2).jpeg" alt="image4" onclick="myFunction(this)">
+						<img class="image" src="/project/Music-site/images/images (3).jpeg" alt="image5" onclick="myFunction(this)">
+					</div>
+
+					<div class="picLine">
+						<img class="image" src="/project/Music-site/images/images (4).jpeg" alt="image6" onclick="myFunction(this)">
+						<img class="image" src="/project/Music-site/images/images (5).jpeg" alt="image7" onclick="myFunction(this)">
+						<img class="image" src="/project/Music-site/images/images (6).jpeg" alt="image8" onclick="myFunction(this)">
+						<img class="image" src="/project/Music-site/images/images (7).jpeg" alt="image9" onclick="myFunction(this)">
+						<img class="image" src="/project/Music-site/images/images (8).jpeg" alt="image10" onclick="myFunction(this)">
+					</div>
+
+					<div class="picLine">
+						<img class="image" src="/project/Music-site/images/img.jpeg" alt="image11" onclick="myFunction(this)">
+						<img class="image" src="/project/Music-site/images/music-1.jpg" alt="image12" onclick="myFunction(this)">
+						<img class="image" src="/project/Music-site/images/record-player.png" alt="image13" onclick="myFunction(this)">
+						<img class="image" src="/project/Music-site/images/single-solfeggio-flute-0_grande.jpg" alt="image14" onclick="myFunction(this)">
+						<img class="image" src="/project/Music-site/images/U5dtXz63VS6mQosaaLt1xZrTYx9UxaY_1680x8400.jpeg" alt="image15" onclick="myFunction(this)">
+					</div>
+
+					<div class="container">
+						<span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+						<img class="modal-content" id="expandedImg">
+						<div id="imgtext">Before we get into the specifies of the 960 Grid System, let's briefly discuss grid-based
+							system design in general. The idea is certainly not something that originated on the Web. In
+							fact, it stems from one of the oldest and most basic design principles: alignment.
+							Our brains like to simplify things to make them readily understandable. This is why we
+							try to imposs order on things that seem chaotic, like seeing a face in the craters on the
+							moon.
+							
+					</div>
+				</div>
+		
+					
+					<!-- Footer Start-->
+					<footer class="footer">
+							<div class="line"> </div>
+							<div class="box">
+								<a class="bottomlink" href="#">EULA&nbsp;
+									<small>|</small>
+								</a>
+								<a class="bottomlink" href="#">&nbsp;Terms of services&nbsp;
+									<small>|</small>
+								</a>
+								<a class="bottomlink" href="#">&nbsp;privacy policy</a>
+							</div>
+							<div>
+								<img class="milogo" src="/project/Music-site/images/Untitled-4.png">
+								<small>copyright  © 2012 My Website. All rights reserved.</small>
+							</div>
+		
+
+							<div class="foot">
+								<a href="#" class="iconNav">
+									<img class="icon" src="/project/Music-site/images/blogger_icon.png">
+								</a>
+		
+								<a href="#" class="iconNav">
+									<img class="icon" src="/project/Music-site/images/facebook.png">
+								</a>
+		
+								<a href="#" class="iconNav">
+									<img class="icon" src="/project/Music-site/images/digg-logo.png">
+								</a>
+		
+								<a href="#" class="iconNav">
+									<img class="icon" src="/project/Music-site/images/linkedin_icon.png">
+								</a>
+		
+								<a href="#" class="iconNav">
+									<img class="icon" src="/project/Music-site/images/stumbleupon_logo.png">
+								</a>
+		
+								<a href="#" class="iconNav">
+									<img class="icon" src="/project/Music-site/images/twitter-icon.png">
+								</a>
+							</div>
+					</footer>
+				</div>
+			</div>	
+		<script>
+			function myFunction(imgs) {
+					var expandImg = document.getElementById("expandedImg");
+					var imgText = document.getElementById("imgtext");
+					expandImg.src = imgs.src;
+					expandImg.parentElement.style.display = "block";
+			}
+			</script>
+    </body>
+</html>
