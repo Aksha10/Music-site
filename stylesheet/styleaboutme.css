@@ -88,6 +88,7 @@ body{
 .search {
   margin-left: 26px;
   border: 1px solid #e2e2e2;
+  font-size: small;
 }
 
 
@@ -107,6 +108,7 @@ body{
 
 .list {
   float: left;
+  width:20%;
 }
 
 
@@ -116,8 +118,8 @@ body{
   text-align: center;
   padding-bottom: 8px;
   padding-top: 8px;
-  padding-left: 56px;
-  padding-right: 56.8px;
+  padding-left: 10px;
+  padding-right: 10px;
   text-decoration: none;
   font-size: 22px;
   border: 1px solid white;
