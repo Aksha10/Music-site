@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>My Video</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=550, initial-scale=1">
+		<link rel="stylesheet" href="stylesheet/flipster/demo.css">
+		<link rel="stylesheet" href="stylesheet/jquery.flipster.min.css">
+		<link rel="stylesheet" type="text/css" href="stylesheet/styleMain.css">
+	</head>
+	<body>
+		<!-- Main container -->
+		<div class="mainContainer">
+			<!-- Container 2 -->
+			<div class="container1">			
+				<!-- Header Start -->
+				<header class="row">
+					<div class="column c1">
+						<div class="mike">
+						</div>
+					</div>
+					<div class="column c2">
+						<div class="music-logo">
+						</div>
+					</div>
+					<div class="column c3">
+						<div class="search-icon">
+							<input type="text" name="search" placeholder="Search..." class="search">
+						</div>
+					</div>
+				</header>
+				<!-- Header End -->
+				<!-- Navigation Bar1-->
+				<div class="navbar1">
+					<ul class="ulist1 row">
+						<li class="list1">
+							<a  href="indexaboutme.html#">About me</a>
+						</li>
+						<li class="list1">
+							<a  href="indexpicture.html">My pictures</a>
+						</li>
+						<li class="list1">
+							<a href="indexmusic.html">My music</a>
+						</li>
+						<li class="list1">
+							<a href="indexFiles.html">My files</a>
+						</li>
+						<li class="list1">
+							<a class="active" href="indexvideo.html">My videos</a>
+						</li>
+					</ul>
+				</div>		
+				<div class="btn-grid-gal row">
+					<button class="btn-grid active" type="button">Grid</button>
+					<button class="btn-gal" type="button">Gallery</button>
+				</div>
+				<!-- Main Content-->
+				<!-- Grid view-->	
+				<div class="gridvid">
+					<div class="row">
+						<div class="divgrid">
+							<video controls id="srcVid" width="450" height="300"></video>
+						</div>
+						<p class="paraGridVid"></p>
+					</div>
+					<!--poster view-->
+					<div>
+						<div class="gridimg" >
+							<img class="playVid gridInfoClick" id="videos/videoplayback.mp4" src="images/tamasha.jpg" 
+								data-placement="top" title="Matargasthi" data-title='Track:Matargasthi' 
+								data-artist='Artist:Mohit Chauhan' data-genre= 'Genre:Filmi' data-length= 'Length:2.29' data-rating='3'>
+						</div>
+						<div class="gridimg">
+							<img class="playVid gridInfoClick" id="videos/videoplayback (1).mp4" src="images/channamereya.jpg"
+							  data-placement="top" title="Channa Mereya" data-title='Track:Channa Mereya' 
+								data-artist='Artist:Nupur Sanon' data-genre= 'Genre: ‎Romantic'  data-length= 'Length:3.28' data-rating='4'>
+						</div>
+						<div class="gridimg">
+							<img class="playVid gridInfoClick" id="videos/videoplayback (2).mp4" src="images/hawayein.jpg"
+								data-placement="top" title="Hawayein" data-title='Track:Hawayein' 
+								data-artist='Artist:Nupur Sanon' data-genre= 'Genre: Romantic' data-length= 'Length:3.59' data-rating='4'>
+						</div>
+						<div class="gridimg">
+							<img class="playVid gridInfoClick" id="videos/videoplayback (3).mp4" src="images/badri.jpg"
+								data-placement="top" title="Humsafar" data-title='Track:Humsafar' 
+								data-artist='Artist:Alia Bhatt' data-genre= 'Genre: Romantic' data-length= 'Length:2.08' data-rating='5'>
+						</div>
+						<div class="gridimg">
+							<img class="playVid gridInfoClick" id="videos/videoplayback (5).mp4" src="images/badri.jpg"
+								data-placement="top" title="Roke na ruke naina" data-title='Track:Roke na ruke naina'
+							data-artist='Artist:Arijit Singh' data-genre= 'Genre: Romantic' data-length= 'Length:2.02' data-rating='4'>
+						</div>
+						<div class="gridimg">
+							<img class="playVid gridInfoClick" id="videos/videoplayback (6).mp4" src="images/yjhd.jpg"
+								data-placement="top" title="Subhanallah" data-title='Track:Subhanallah' 
+								data-artist='Artist:Sreeram, Shilpa Rao' data-genre= 'Genre: Romantic' data-length= 'Length:3.25' data-rating='5'>
+						</div>
+						<div class="gridimg">
+							<img class="playVid gridInfoClick" id="videos/videoplayback (7).mp4" src="images/bbd.jpg"
+								data-placement="top" title="Nachde ne saare" data-title='Track:Nachde ne saare' 
+								data-artist='Artist:Jasleen Royal, Harshdeep Kaur' 
+								data-genre= 'Genre: Wedding Dance Song ' data-length= 'Length:3.22' data-rating='3'>
+						</div>
+						<div class="gridimg">
+							<img class="playVid gridInfoClick" id="videos/videoplayback (8).mp4" src="images/tzh.jpg"
+								data-placement="top" title="Swag se swagat" data-title='Track:Swag se swagat' 
+								data-artist='Artist:Neha Bhasin, Vishal Dadlani' 
+								data-genre= 'Genre: Rap, Heart-pumping drops and Electronic music' data-length= 'Length:2.49' data-rating='5'>
+						</div>
+						<div class="gridimg">
+							<img class="playVid gridInfoClick" id="videos/videoplayback (9).mp4" src="images/badri.jpg"
+								data-placement="top" title="Tamma Tamma" data-title='Track:Tamma Tamma' 
+								data-artist='Artist: Badshah, Bappi Lahiri, Anuradha Paudwal' data-genre= 'Gener: Hindi Pop' 
+								data-length= 'Length:2.02' data-rating='4'>
+						</div>
+						<div class="gridimg">
+							<img class="playVid gridInfoClick" id="videos/videoplayback (10).mp4" src="images/badri.jpg"
+								data-placement="top" title="Badri ki dulhania" data-title='Track:Badri ki dulhania' 
+								data-artist='Artist:	Dev Negi, Neha Kakkar, Monali Thakur, Ikka'
+								data-genre= 'Gener: Drama' data-length= 'Length:2.52' data-rating='3'>
+						</div>
+					</div>
+				</div>		
+				<!-- Gallery View -->
+				<div class="galvid disp">
+					<article id="demo-carousel" class="demo">			
+						<div id="carousel" class="flipster">
+							<ul class="flip-items">
+								<!-- class="galInfoClick" -->
+								<li data-placement="top" title="Matargasthi" >
+									<video class="pausevid galInfoClick" width="450px" controls poster="images/tamasha.jpg" 
+									data-title='Track:Matargasthi' data-artist='Artist:Mohit Chauhan' data-genre= 'Genre:Filmi' 
+									data-length= 'Length:2.29' data-rating='3'>
+									<source src="videos/videoplayback.mp4" type="video/mp4"></video>
+								</li>
+								<li data-placement="top" title="Channa Mereya">
+									<video class="pausevid galInfoClick" width="450px" controls poster="images/channamereya.jpg" 
+									data-title='Track:Channa Mereya' data-artist='Artist:Nupur Sanon' data-genre= 'Genre: ‎Romantic' 
+									data-length= 'Length:3.28' data-rating='4'>
+									<source src="videos/videoplayback (1).mp4" type="video/mp4"></video>
+								</li>
+								<li data-placement="top" title="Hawayein">
+									<video class="pausevid galInfoClick" width="450px" controls poster="images/hawayein.jpg" 
+									data-title='Track:Hawayein' data-artist='Artist:Nupur Sanon' data-genre= 'Genre: Romantic' 
+									data-length= 'Length:3.59' data-rating='4'>
+									<source src="videos/videoplayback (2).mp4" type="video/mp4"></video>
+								</li>
+								<li data-placement="top" title="Humsafar">
+									<video class="pausevid galInfoClick" width="450px" controls poster="images/badri.jpg" 
+									data-title='Track:Humsafar' data-artist='Artist:Alia Bhatt' data-genre= 'Genre: Romantic' 
+									data-length= 'Length:2.08' data-rating='5'>
+									<source src="videos/videoplayback (3).mp4" type="video/mp4"></video>
+								</li>
+								<li data-placement="top" title="Roke na ruke naina">
+									<video class="pausevid galInfoClick" width="450px" controls poster="images/badri.jpg" 
+									data-title='Track:Roke na ruke naina' data-artist='Artist:Arijit Singh' data-genre= 'Genre: Romantic' 
+									data-length= 'Length:2.02' data-rating='4'>
+									<source src="videos/videoplayback (5).mp4" type="video/mp4"></video>
+								</li>
+								<li data-placement="top" title="Subhanallah">
+									<video class="pausevid galInfoClick" width="450px" controls poster="images/yjhd.jpg" 
+									data-title='Track:Subhanallah' data-artist='Artist:Sreeram, Shilpa Rao' data-genre= 'Genre: Romantic' 
+									data-length= 'Length:3.25' data-rating='5'>
+									<source src="videos/videoplayback (6).mp4" type="video/mp4"></video>
+								</li>
+								<li data-placement="top" title="Nachde ne saare">
+									<video class="pausevid galInfoClick" width="450px" controls poster="images/bbd.jpg" 
+									data-title='Track:Nachde ne saare' data-artist='Artist:Jasleen Royal, Harshdeep Kaur' 
+									data-genre= 'Genre: Wedding Dance Song ' data-length= 'Length:3.22' data-rating='3'>
+									<source src="videos/videoplayback (7).mp4" type="video/mp4"></video>
+								</li>
+								<li data-placement="top" title="Swag se swagat">
+									<video class="pausevid galInfoClick" width="450px" controls poster="images/tzh.jpg" 
+									data-title='Track:Swag se swagat' data-artist='Artist:Neha Bhasin, Vishal Dadlani' 
+									data-genre= 'Genre: Rap, Heart-pumping drops and Electronic music' data-length= 'Length:2.49' data-rating='5'>
+									<source src="videos/videoplayback (8).mp4" type="video/mp4"></video>
+								</li>
+								<li data-placement="top" title="Tamma Tamma">
+									<video class="pausevid galInfoClick" width="450px" controls poster="images/badri.jpg" 
+									data-title='Track:Tamma Tamma' data-artist='Artist: Badshah, Bappi Lahiri, Anuradha Paudwal' 
+									data-genre= 'Gener: Hindi Pop' data-length= 'Length:2.02' data-rating='4'>
+									<source src="videos/videoplayback (9).mp4" type="video/mp4"></video>
+								</li>
+								<li data-placement="top" title="Badri ki dulhania">
+									<video class="pausevid galInfoClick" width="450px" controls poster="images/badri.jpg" 
+									data-title='Track:Badri ki dulhania' data-artist='Artist:	Dev Negi, Neha Kakkar, Monali Thakur, Ikka'
+									data-genre= 'Gener: Drama' data-length= 'Length:2.52' data-rating='3'>
+									<source src="videos/videoplayback (10).mp4" type="video/mp4"></video>
+								</li>
+							</ul>
+						</div>
+					</article>
+					<p class="paraGalVid"></p>		
+				</div>
+							<!-- Footer Start-->
+				<footer class="footer">
+					<div class="line"> </div>
+					<div class="box">
+						<a class="bottomlink line-after" href="#">EULA</a>
+						<a class="bottomlink line-after" href="#">Terms of service</a>
+						<a class="bottomlink" href="#">Privacy policy</a>
+					</div>
+					<div>
+						<img class="milogo" src="images/Untitled-4.png">
+						<small>copyright  © 2012 My Website. All rights reserved.</small>
+					</div>		
+					<div class="foot">
+						<a href="#" class="iconNav">
+							<img class="icon" src="images/blogger_icon.png">
+						</a>		
+						<a href="#" class="iconNav">
+							<img class="icon" src="images/facebook.png">
+						</a>		
+						<a href="#" class="iconNav">
+							<img class="icon" src="images/digg-logo.png">
+						</a>		
+						<a href="#" class="iconNav">
+							<img class="icon" src="images/linkedin_icon.png">
+						</a>		
+						<a href="#" class="iconNav">
+							<img class="icon" src="images/stumbleupon_logo.png">
+						</a>		
+						<a href="#" class="iconNav">
+							<img class="icon" src="images/twitter-icon.png">
+						</a>
+					</div>
+				</footer>
+			</div>
+		</div>	
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.flipster.min.js"></script>		
+	<script type="text/javascript" src="js/scriptMusic.js"></script>
+	</body>
+</html>

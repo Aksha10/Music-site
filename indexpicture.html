@@ -1,82 +1,105 @@
 <!DOCTYPE html>
 <html>
-			<title>My Picture Grid</title>			
-			<link rel="stylesheet" href="stylesheet/stylepicture.css">
-    <body>
+	<head>
+		<title>My Picture Grid</title>			
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
+		<meta name="description" content="Responsive Image Gallery with jQuery" />
+		<meta name="keywords" content="jquery, carousel, image gallery, slider, responsive, flexible, fluid, resize, css3" />
+		<meta name="author" content="Codrops" />
+		<link rel="stylesheet" href="stylesheet/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="stylesheet/elastislide.css" />
+		<link rel="stylesheet" type="text/css" href="stylesheet/css.css" />
+		<link rel="stylesheet" type="text/css" href="stylesheet/cssfont.css" />
+		<link rel="stylesheet" type="text/css" href="stylesheet/reset.css">
+		<link rel="stylesheet" type="text/css" href="stylesheet/style.css" />
+		<link rel="stylesheet" type="text/css" href="stylesheet/styleMain.css">
+		<script id="img-wrapper-tmpl" type="text/x-jquery-tmpl">					
+			<div class="rg-image-wrapper">
+				{{if itemsCount > 1}}
+					<div class="rg-image-nav">
+					</div>
+				{{/if}}	
+				<div class="rg-image"></div>
+				<div class="rg-loading"></div>
+				<div class="rg-caption-wrapper">
+					<div class="rg-caption" style="display:none;">
+						<p></p>
+					</div>
+				</div>
+			</div>
+		</script>
+	</head>
+	<body>
 		<!-- Main container -->
 		<div class="mainContainer">
-		  <!-- Container 2 -->
+			<!-- Container 2 -->
 			<div class="container1">			
 				<!-- Header Start -->
 				<header class="row">
-						<div class="column c1">
-							<div class="mike">
-							</div>
+					<div class="column c1">
+						<div class="mike">
 						</div>
-						<div class="column c2">
-							<div class="music-logo">
-							</div>
-						</div>
-						<div class="column c3">
-							<div class="search-icon">
-								<input type="text" name="search" placeholder="Search..." class="search">
-							</div>
-						</div>
-					</header>
-					<!-- Header End -->
-					<!-- Navigation Bar1-->
-					<div class="navbar1">
-							<ul class="ulist1 row">
-								<li class="list1">
-									<a  href="indexaboutme.html#">About me</a>
-								</li>
-								<li class="list1">
-									<a class="active" href="indexpicture.html">My pictures</a>
-								</li>
-								<li class="list1">
-									<a href="#">My music</a>
-								</li>
-								<li class="list1">
-									<a href="indexFiles.html">My files</a>
-								</li>
-								<li class="list1">
-									<a href="#">My videos</a>
-								</li>
-							</ul>
-						</div>
-					<!-- Navigation Bar2-->
-					<div class="navbar2">
-						<ul class="ulist2 row">
-							<li class="list2">
-								<a class="active" href="indexpicture.html">Grid</a>
-							</li>
-							<li class="list2">
-								<a href="#">Gallery</a>
-							</li>
-						</ul>
 					</div>
-					<!-- Navigation Bar end-->
-					<!-- Main-Content -->
+					<div class="column c2">
+						<div class="music-logo">
+						</div>
+					</div>
+					<div class="column c3">
+						<div class="search-icon">
+							<input type="text" name="search" placeholder="Search..." class="search">
+						</div>
+					</div>
+				</header>
+				<!-- Header End -->
+				<!-- Navigation Bar1-->
+				<div class="navbar1">
+					<ul class="ulist1 row">
+						<li class="list1">
+							<a  href="indexaboutme.html#">About me</a>
+						</li>
+						<li class="list1">
+							<a class="active" href="indexpicture.html">My pictures</a>
+						</li>
+						<li class="list1">
+							<a href="indexmusic.html">My music</a>
+						</li>
+						<li class="list1">
+							<a href="indexFiles.html">My files</a>
+						</li>
+						<li class="list1">
+							<a href="indexvideo.html">My videos</a>
+						</li>
+					</ul>
+				</div>
+				<div class="btn-grid-gal">
+					<button class="btn-grid active" type="button">Grid</button>
+					<button class="btn-gal" type="button">Gallery</button>
+				</div>				
+				<!-- Main-Content -->
+				<div class="grid">
 					<div class="picLine">
-						<img class="image" src="images/download.jpeg" alt="image1" onclick="myFunction(this)">
-						<img class="image" src="images/images.jpeg" alt="image2" onclick="myFunction(this)">
-						<img class="image" src="images/images (1).jpeg" alt="image3" onclick="myFunction(this)">
-						<img class="image" src="images/images (2).jpeg" alt="image4" onclick="myFunction(this)">
-						<img class="image" src="images/images (3).jpeg" alt="image5" onclick="myFunction(this)">
+						<img class="image" src="images/02c179b379bd320d96ca9720c48a7069.jpg" alt="image1">
+						<img class="image" src="images/3e082a4227ff441f04b17451db8ec1fb.jpg" alt="image2">
+						<img class="image" src="images/4a038927c338d16e0fbd39a496451909.jpg" alt="image3">
+						<img class="image" src="images/5fe0d880cf654b65bb6b734b9784d188.jpg" alt="image4">
+						<img class="image" src="images/9c2855a818532dd07d78df8b6cf62b33.jpg" alt="image5">
 					</div>
 					<div class="picLine">
-						<img class="image" src="images/images (4).jpeg" alt="image6" onclick="myFunction(this)">
-						<img class="image" src="images/images (5).jpeg" alt="image7" onclick="myFunction(this)">
-						<img class="image" src="images/images (6).jpeg" alt="image8" onclick="myFunction(this)">
-						<img class="image" src="images/images (7).jpeg" alt="image9" onclick="myFunction(this)">
-						<img class="image" src="images/images (8).jpeg" alt="image10" onclick="myFunction(this)">
+						<img class="image" src="images/41a654e4d1c840cf73fc9dd244bbbedc.jpg" alt="image6">
+						<img class="image" src="images/51c08df3c4a2005db4f0bec2ec0505d3.jpg" alt="image7">
+						<img class="image" src="images/626cbc1ea010ff4a5f003616bcd695c6.jpg" alt="image8">
+						<img class="image" src="images/ae99806fe87e95136b51cd2e395eaf50.jpg" alt="image9">
+						<img class="image" src="images/b43ad967c82b566517688e642f05fbdd.jpg" alt="image10">
 					</div>
 					<div class="picLine">
-						<img class="image" src="images/img.jpeg" alt="image11" onclick="myFunction(this)">
-						<img class="image" src="images/music-1.jpg" alt="image12" onclick="myFunction(this)">
-						<img class="image" src="images/record-player.png" alt="image13" onclick="myFunction(this)">
-						<img class="image" src="images/single-solfeggio-flute-0_grande.jpg" alt="image14" onclick="myFunction(this)">
-						<img class="image" src="images/U5dtXz63VS6mQosaaLt1xZrTYx9UxaY_1680x8400.jpeg" alt="image15" onclick="myFunction(this)">
+						<img class="image" src="images/1.jpg" alt="image11">
+						<img class="image" src="images/c5dd31ccb282832685fea04e4885d7a2.jpg" alt="image12">
+						<img class="image" src="images/d2b8d6c8801df1012219b3612fd94a94.jpg" alt="image13">
+						<img class="image" src="images/e27ca277d3575aeb0ca02b311d214e44.jpg" alt="image14">
+						<img class="image" src="images/9c2855a818532dd07d78df8b6cf62b33.jpg" alt="image15">
 					</div>
 					<div class="container">
 						<span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
@@ -87,54 +110,185 @@
 							Our brains like to simplify things to make them readily understandable. This is why we
 							try to imposs order on things that seem chaotic, like seeing a face in the craters on the
 							moon.							
+						</div>
+					</div>	
+				</div>				
+				<div id="rg-gallery" class="rg-gallery disp">
+					<div class="rg-thumbs">
+						<!-- Elastislide Carousel Thumbnail Viewer -->
+						<div class="es-carousel-wrapper">
+							<div class="es-nav">
+								<span class="es-nav-prev">Previous</span>
+								<span class="es-nav-next">Next</span>
+							</div>
+							<div class="es-carousel">
+								<ul>
+									<li>
+										<a href="#">
+											<img src="images/02c179b379bd320d96ca9720c48a7069.jpg" 
+											data-large="images/02c179b379bd320d96ca9720c48a7069.jpg" alt="image01"
+											data-description="Before we get into the specifies of the 960 Grid System, 
+											let's briefly discuss grid-based system design in general.">
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="images/3e082a4227ff441f04b17451db8ec1fb.jpg" 
+											data-large="images/3e082a4227ff441f04b17451db8ec1fb.jpg" alt="image02"
+											data-description="Before we get into the specifies of the 960 Grid System, 
+											let's briefly discuss grid-based system design in general.">
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="images/4a038927c338d16e0fbd39a496451909.jpg" 
+											data-large="images/4a038927c338d16e0fbd39a496451909.jpg" alt="image03"
+											data-description="Before we get into the specifies of the 960 Grid System, 
+											let's briefly discuss grid-based system design in general.">
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="images/5fe0d880cf654b65bb6b734b9784d188.jpg" 
+											data-large="images/5fe0d880cf654b65bb6b734b9784d188.jpg" alt="image04" 
+											data-description="Before we get into the specifies of the 960 Grid System, 
+											let's briefly discuss grid-based system design in general.">
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="images/9c2855a818532dd07d78df8b6cf62b33.jpg" 
+											data-large="images/9c2855a818532dd07d78df8b6cf62b33.jpg" alt="image05"
+											data-description="Before we get into the specifies of the 960 Grid System, 
+											let's briefly discuss grid-based system design in general.">
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="images/41a654e4d1c840cf73fc9dd244bbbedc.jpg" 
+											data-large="images/41a654e4d1c840cf73fc9dd244bbbedc.jpg" alt="image06"
+											data-description="Before we get into the specifies of the 960 Grid System, 
+											let's briefly discuss grid-based system design in general.">
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="images/51c08df3c4a2005db4f0bec2ec0505d3.jpg" 
+											data-large="images/51c08df3c4a2005db4f0bec2ec0505d3.jpg" alt="image07"
+											data-description="Before we get into the specifies of the 960 Grid System, 
+											let's briefly discuss grid-based system design in general.">
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="images/626cbc1ea010ff4a5f003616bcd695c6.jpg" 
+											data-large="images/626cbc1ea010ff4a5f003616bcd695c6.jpg" alt="image08"
+											data-description="Before we get into the specifies of the 960 Grid System, 
+											let's briefly discuss grid-based system design in general.">
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="images/ae99806fe87e95136b51cd2e395eaf50.jpg" 
+											data-large="images/ae99806fe87e95136b51cd2e395eaf50.jpg" alt="image09"
+											data-description="Before we get into the specifies of the 960 Grid System, 
+											let's briefly discuss grid-based system design in general.">
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="images/b43ad967c82b566517688e642f05fbdd.jpg" 
+											data-large="images/b43ad967c82b566517688e642f05fbdd.jpg" alt="image10"
+											data-description="Before we get into the specifies of the 960 Grid System, 
+											let's briefly discuss grid-based system design in general.">
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="images/1.jpg	"  
+											data-large="images/1.jpg	" alt="image11"
+											data-description="Before we get into the specifies of the 960 Grid System, 
+											let's briefly discuss grid-based system design in general.">
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="images/c5dd31ccb282832685fea04e4885d7a2.jpg" 
+											data-large="images/c5dd31ccb282832685fea04e4885d7a2.jpg" alt="image12"
+											data-description="Before we get into the specifies of the 960 Grid System, 
+											let's briefly discuss grid-based system design in general.">
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="images/d2b8d6c8801df1012219b3612fd94a94.jpg" 
+											data-large="images/d2b8d6c8801df1012219b3612fd94a94.jpg" alt="image13"
+											data-description="Before we get into the specifies of the 960 Grid System, 
+											let's briefly discuss grid-based system design in general.">
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="images/e27ca277d3575aeb0ca02b311d214e44.jpg" 
+											data-large="images/e27ca277d3575aeb0ca02b311d214e44.jpg" alt="image14"
+											data-description="Before we get into the specifies of the 960 Grid System, 
+											let's briefly discuss grid-based system design in general.">
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="images/9c2855a818532dd07d78df8b6cf62b33.jpg" 
+											data-large="images/9c2855a818532dd07d78df8b6cf62b33.jpg" alt="image15"
+											data-description="Before we get into the specifies of the 960 Grid System, 
+											let's briefly discuss grid-based system design in general.">
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<!-- End Elastislide Carousel Thumbnail Viewer -->
+					</div><!-- rg-thumbs -->
+				</div><!-- rg-gallery -->		
+				<!-- Footer Start-->
+				<footer class="footer">
+					<div class="line"> </div>
+					<div class="box">
+						<a class="bottomlink line-after" href="#">EULA</a>
+						<a class="bottomlink line-after" href="#">Terms of service</a>
+						<a class="bottomlink" href="#">Privacy policy</a>
 					</div>
-				</div>					
-					<!-- Footer Start-->
-					<footer class="footer">
-							<div class="line"> </div>
-							<div class="box">
-								<a class="bottomlink" href="#">EULA&nbsp;
-									<small>|</small>
-								</a>
-								<a class="bottomlink" href="#">&nbsp;Terms of services&nbsp;
-									<small>|</small>
-								</a>
-								<a class="bottomlink" href="#">&nbsp;privacy policy</a>
-							</div>
-							<div>
-								<img class="milogo" src="images/Untitled-4.png">
-								<small>copyright  © 2012 My Website. All rights reserved.</small>
-							</div>		
-							<div class="foot">
-								<a href="#" class="iconNav">
-									<img class="icon" src="images/blogger_icon.png">
-								</a>		
-								<a href="#" class="iconNav">
-									<img class="icon" src="images/facebook.png">
-								</a>		
-								<a href="#" class="iconNav">
-									<img class="icon" src="images/digg-logo.png">
-								</a>		
-								<a href="#" class="iconNav">
-									<img class="icon" src="images/linkedin_icon.png">
-								</a>		
-								<a href="#" class="iconNav">
-									<img class="icon" src="images/stumbleupon_logo.png">
-								</a>		
-								<a href="#" class="iconNav">
-									<img class="icon" src="images/twitter-icon.png">
-								</a>
-							</div>
-					</footer>
-				</div>
-			</div>	
-		<script>
-			function myFunction(imgs) {
-					var expandImg = document.getElementById("expandedImg");
-					var imgText = document.getElementById("imgtext");
-					expandImg.src = imgs.src;
-					expandImg.parentElement.style.display = "block";
-			}
-			</script>
-    </body>
+					<div>
+						<img class="milogo" src="images/Untitled-4.png">
+						<small>copyright  © 2012 My Website. All rights reserved.</small>
+					</div>		
+					<div class="foot">
+						<a href="#" class="iconNav">
+							<img class="icon" src="images/blogger_icon.png">
+						</a>		
+						<a href="#" class="iconNav">
+							<img class="icon" src="images/facebook.png">
+						</a>		
+						<a href="#" class="iconNav">
+							<img class="icon" src="images/digg-logo.png">
+						</a>		
+						<a href="#" class="iconNav">
+							<img class="icon" src="images/linkedin_icon.png">
+						</a>		
+						<a href="#" class="iconNav">
+							<img class="icon" src="images/stumbleupon_logo.png">
+						</a>		
+						<a href="#" class="iconNav">
+							<img class="icon" src="images/twitter-icon.png">
+						</a>
+					</div>
+				</footer>
+			</div>
+		</div>	
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.tmpl.min.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+		<script type="text/javascript" src="js/jquery.elastislide.js"></script>
+		<script type="text/javascript" src="js/gallery.js"></script>
+		<script type="text/javascript" src="js/scriptMusic.js"></script>
+	</body>
 </html>
