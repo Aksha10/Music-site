@@ -1,6 +1,6 @@
 @font-face {
   font-family: "MaiandraGD";
-  src: url('/project/Music-site/fonts/maiandra-gd/Maiandra GD Regular.ttf');
+  src: url('../fonts/maiandra-gd/Maiandra GD Regular.ttf');
 }
   
 
@@ -24,14 +24,14 @@ body{
     
   
 .mainContainer {
-  background-image: url(/project/Music-site/images/bg1.jpg);
+  background-image: url(../images/bg1.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
     
     
 .container1 {
-  background-image: url(/project/Music-site/images/Layer4.png);
+  background-image: url(../images/Layer4.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   width: 68.9%;
@@ -70,7 +70,7 @@ body{
     
     
 .mike {
-  background-image: url(/project/Music-site/images/Untitled-1.jpg);
+  background-image: url(../images/Untitled-1.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   width: 90%;
@@ -79,7 +79,7 @@ body{
     
     
 .music-logo {
-  background-image: url(/project/Music-site/images/Music-logo.png);
+  background-image: url(../images/Music-logo.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   width: 59.7%;
@@ -91,7 +91,7 @@ body{
     
 .search-icon {
   width: 76.6%;
-  background: #e2e2e2 url(/project/Music-site/images/search_icon.png) no-repeat;
+  background: #e2e2e2 url(../images/search_icon.png) no-repeat;
   border: 1px solid #e2e2e2;
   background-position-x: 4px;
   background-position-y: 3px;
@@ -816,6 +816,11 @@ table {
   font-size: 10px; 
 }
 
+.bottomlink a {
+  color: transparent;
+  text-decoration: none;
+}
+
 
 .line-after::after {
   content: " | ";
@@ -825,6 +830,7 @@ table {
 .milogo {
   width: 6%;
   height: 43px;   
+  vertical-align: bottom;
 }
     
     
